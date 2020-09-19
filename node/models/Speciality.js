@@ -74,6 +74,29 @@ class Speciality{
 
     }
 
+    async deleteDoctorSpecialities(doctor_id,speciality_id){
+        const condition = { doctor_id , speciality_id};
+        try{
+            const result = await knex.delete().from("doctorsSpeciality").where({...condition});
+            if(result){
+                return{
+                    status:true,
+                    result
+                }
+            }else{
+                return {
+                    status: false
+                }
+            }
+        }catch (err){
+            return{
+                status:false,
+                err
+            }
+        }
+
+    }
+
     async getDoctorSpecialities(doctor_id){
         try{
             const result = await knex.select()

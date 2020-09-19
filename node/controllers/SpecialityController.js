@@ -120,12 +120,32 @@ class SpecialityController{
     }
 
     async deleteDoctorSpecialities(req,res) {
-        const { doctor_id , specialities } =  req.body;
+        const { doctor_id , speciality_id } =  req.body;
 
-        res.json({
-            doctor_id,
-            specialities
-        });
+        try{
+            const result = await Speciality.deleteDoctorSpecialities(doctor_id,speciality_id) ;
+
+            if(result.status){
+                res.status(200);
+                res.json({
+                    result,
+                    status:true
+                });
+            }
+            else {
+                res.status(404);
+                res.json({
+                    status:false,
+                    message:"Usuário inválido ou o usuário não possui esta especialidade",
+                });
+            }
+        }catch (err){
+            res.status(500);
+            res.json({
+                status:false,
+                err
+            });
+        }
     }
 
 }
