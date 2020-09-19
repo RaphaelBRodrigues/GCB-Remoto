@@ -8,6 +8,12 @@
     width: 100%;
 }
 
+#doctor-card fieldset legend{
+    display: flex;
+    justify-content: space-between;
+}
+
+
 #doctor-card fieldset div{
     display: flex;
     justify-content: space-evenly;

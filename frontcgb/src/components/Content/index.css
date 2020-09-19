@@ -1,16 +1,8 @@
-footer{
-    background-color: var(--project-color-dark);
-    color:var(--project-color-4);
+main{
+    margin: 2em auto 2em auto;
+    width: 70%;
     display: flex;
-    justify-content: flex-end;
-    box-sizing: border-box;
-    position: absolute;
-    width: 100%;
-    font-style: italic;
-    bottom: 0;
-
-}
-
-footer ul{
-    padding: 0.2em 0.8em 0.2em 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }

@@ -1,18 +1,15 @@
 import React from 'react';
-import logo from '../../assets/images/logo.png';
 import "./index.css";
+
+import List from '../List';
+
+import Search from '../Search';
 
 export default () =>{
     return(
-        <footer>
-            <ul>
-                <li>
-                    ~ Raphael Barbosa Rodrigues
-                </li>
-            </ul>
-        </footer>
-
-
-
+        <main>
+            <Search />
+            {true && <List/>}
+        </main>
     );
 }

@@ -1,10 +1,27 @@
 :root{
+    --project-color-1:#2A2F3D;
+    --project-color-2:#00F2FF;
+    --project-color-3:#FF6732;
+    --project-color-4:#FFCA00;
+    --project-color-5:#FFFFFF;
 
+    --project-color-dark:black;
+
+    --project-font-default: 'Open Sans', sans-serif;
 }
 
-body{
-    background: blue;
+body {
     margin: 0;
     padding: 0;
+    background-color: var(--project-color-5);
+    font-family: var(--project-font-default);
 }
 
+.App{
+    display: flex;
+    flex-direction: column;
+}
+
+ul {
+    list-style: none;
+}

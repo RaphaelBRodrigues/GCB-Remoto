@@ -1,14 +1,24 @@
 import React, {useEffect, useState} from 'react';
+import { deleteDoctor } from "./handles";
 import "./index.css";
 
-export default ({ doctor , specialities }) => {
+export default ({ doctor }) => {
 
+    async function confirmDeleteDoctor(id){
+        const sure = window.confirm("Deseja deletar o doutor(a) "+doctor.name+"?");
+
+        if(sure){
+            await deleteDoctor(id);
+        }
+    }
 
     return (
         <section id="doctor-card">
             <fieldset>
                 <legend>
-                    {doctor.name} Barbosa Rodrigues
+                    <p>
+                        {doctor.name}
+                    </p>
                 </legend>
                 <div>
                     <div>
@@ -28,12 +38,15 @@ export default ({ doctor , specialities }) => {
                         </ul>
                     </div>
                     <div>
-                        {specialities}
+
                         {/*{specialities && specialities.map((speciality)=>{*/}
                         {/*        return <p>teste</p>*/}
                         {/*})}*/}
                     </div>
                 </div>
+                <button onClick={()=>confirmDeleteDoctor(doctor.id)}>
+                    Deletar
+                </button>
             </fieldset>
         </section>
     );
