@@ -3,10 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="9f90db37-08e8-4752-8bca-ae5d3afa7b29" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.me" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node/SQL.sql" beforeDir="false" afterPath="$PROJECT_DIR$/node/SQL.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/node/controllers/DoctorController.js" beforeDir="false" afterPath="$PROJECT_DIR$/node/controllers/DoctorController.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/node/models/Doctor.js" beforeDir="false" afterPath="$PROJECT_DIR$/node/models/Doctor.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node/routes/routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/node/routes/routes.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,7 +50,7 @@
       <updated>1600452859057</updated>
       <workItem from="1600452860181" duration="2146000" />
       <workItem from="1600461033174" duration="1722000" />
-      <workItem from="1600512402008" duration="11272000" />
+      <workItem from="1600512402008" duration="11963000" />
     </task>
     <servers />
   </component>

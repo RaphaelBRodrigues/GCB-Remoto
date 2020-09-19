@@ -22,6 +22,7 @@ class Doctor{
     async getDoctorByCrm(crm){
         try{
             const result = await knex.select().from("doctor").where({crm});
+
             if(result.length > 0){
                 return {
                     status:true,
@@ -61,17 +62,33 @@ class Doctor{
     }
 
     async updateDoctor({id, name, crm, state, city}){
-        console.log({id, name, crm, state, city});
 
-        return {
-            status:true,
-            result:1
-        };
+        const data = { name, crm, state, city };
 
-        return {
-            status:false,
-            err
-        };
+        try{
+            const result = await knex.update({...data}).table("doctor").where({id});
+            if(result){
+                return {
+                    status:true,
+                    result
+                };
+            }else{
+                return {
+                    status:false,
+                    result
+                };
+            }
+
+
+        }catch (err){
+            return {
+                status:false,
+                err
+            };
+        }
+
+
+
     }
 
     async createDoctor({name, crm, state, city,phone}){

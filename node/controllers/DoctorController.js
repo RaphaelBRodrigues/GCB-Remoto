@@ -158,8 +158,9 @@ class DoctorController{
                     });
                 }else{
                     res.status(400);
+                    console.log(result);
                     res.json({
-                        err:result.err,
+                        message:"Falha ao atualizar os dados do médico",
                         status:false
                     });
                 }
@@ -167,6 +168,7 @@ class DoctorController{
                 res.status(500);
                 res.json({
                     err:err,
+                    message:"Falha ao atualizar os dados do médico",
                     status:false
                 });
             }

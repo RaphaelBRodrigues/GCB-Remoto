@@ -37,6 +37,11 @@ router.get("/",(req,res)=>{
                 description:"Cadastra um médico"
             },
             {
+                method: "put",
+                route:"/doctor/id",
+                description:"Atualiza os dados do médico com o id igual ao passado pelo parâmetro"
+            },
+            {
                 method: "delete",
                 route:"/doctor/:id",
                 description:"Deleta o médico com o id passado como parâmetro"
