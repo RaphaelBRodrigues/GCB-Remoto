@@ -9,7 +9,7 @@
 * https://raphaelbrodrigues.github.io/GCB-Remoto/
 
 ### API (Node.Js)
-* `Endpoint` -  http://raphaelgcb-dev.umbler.net/r
+* `Endpoint` -  http://raphaelgcb-dev.umbler.net/
 
 * `GET - /` - Exibe todos os endpoints disponíveis
 

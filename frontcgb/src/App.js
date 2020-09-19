@@ -8,8 +8,8 @@ import "./assets/styles/global.css";
 
 function App() {
 
-    const [showList,setShowList] = useState(true);
-    const [showCreateUser,setShowCreateUser] = useState(false);
+    const [showList,setShowList] = useState(false);
+    const [showCreateUser,setShowCreateUser] = useState(true);
 
     return (
     <div className="App">
