@@ -60,13 +60,33 @@ class SpecialityController{
 
     }
 
-    async createDoctorSpecialities(req,res) {
-        const { doctor_id , specialities } =  req.body;
+    async createDoctorSpeciality(req,res) {
+        const { doctor_id , speciality_id } =  req.body;
 
-        res.json({
-            doctor_id,
-            specialities
-        });
+        try{
+            const result = await Speciality.createDoctorSpecialities(doctor_id,speciality_id) ;
+
+            if(result.err){
+                res.status(404);
+                res.json({
+                    status:false,
+                    message:"Usuário ou especialidade inválida",
+                    result
+                });
+            }else {
+                res.json({
+                    doctor_id,
+                    result
+                });
+            }
+        }catch (err){
+            res.status(500);
+            res.json({
+                status:false,
+                err
+            });
+        }
+
 
     }
 

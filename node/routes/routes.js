@@ -19,7 +19,7 @@ router.get("/speciality/:id",SpecialityController.getSpecialityById);
 
 // Especialidades do doutor
 router.get("/doctorSpeciality",SpecialityController.getDoctorSpecialities);
-router.post("/doctorSpeciality",SpecialityController.createDoctorSpecialities);
+router.post("/doctorSpeciality",SpecialityController.createDoctorSpeciality);
 router.delete("/doctorSpeciality",SpecialityController.deleteDoctorSpecialities);
 
 
@@ -59,13 +59,28 @@ router.get("/",(req,res)=>{
             },
             {
                 method: "get",
-                route:"/specialities",
+                route:"/speciality",
                 description:"Recupera todas as especialidades"
             },
             {
                 method: "get",
                 route:"/speciality/:id",
                 description:"Recupera a especialidade com o id passado como parâmetro"
+            },
+            {
+                method: "get",
+                route:"/doctorSpeciality",
+                description:"Recupera as especialidades do médico"
+            },
+            {
+                method: "post",
+                route:"/doctorSpeciality",
+                description:"Adiciona uma nova especialidade ao médico"
+            },
+            {
+                method: "Delete",
+                route:"/doctorSpeciality",
+                description:"Deleta uma especialidade do médico"
             },
         ]
     });
