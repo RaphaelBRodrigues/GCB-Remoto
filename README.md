@@ -9,7 +9,7 @@
 *
 
 ### API (Node.Js)
-* `Endpoint:` http://url.com/
+* `Endpoint` -  http://url.com/
 * `GET - /` - Exibe todos os endpoints disponíveis
 
 ## Principais tecnologias utilizadas

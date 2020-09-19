@@ -4,10 +4,8 @@ const knex = require("../database/connection");
 class Doctor{
 
     async getDoctors(){
-
         try{
             const result = await knex.select().from("doctor");
-            console.log(result);
             return {
                 status:true,
                 result
@@ -21,17 +19,37 @@ class Doctor{
         }
 }
 
-    async getDoctorById(id){
-        console.log("getDoctorById");
+    async getDoctorByCrm(crm){
+        try{
+            const result = await knex.select().from("doctor").where({crm});
+            if(result.length > 0){
+                return {
+                    status:true,
+                    result
+                };
+            }else{
+                return {
+                    status:false,
+
+                }
+            }
+
+        }catch (err){
+            console.log(err);
+            return {
+                status:false,
+                err
+            };
+
+        }
     }
 
     async delete(id){
         try{
             const result = await knex.delete().table("doctor").where({id});
-            console.log(result);
+            const status = result ? true : false;
             return {
-                status:true,
-                result
+                status
             };
         }catch (err){
             return {
@@ -42,8 +60,18 @@ class Doctor{
         }
     }
 
-    async updateDoctor(id,name,crm,state,city){
-        console.log("updateDoctor");
+    async updateDoctor({id, name, crm, state, city}){
+        console.log({id, name, crm, state, city});
+
+        return {
+            status:true,
+            result:1
+        };
+
+        return {
+            status:false,
+            err
+        };
     }
 
     async createDoctor({name, crm, state, city,phone}){
@@ -52,7 +80,6 @@ class Doctor{
             const result = await knex.insert({
                 name,crm,state,city,phone
             }).into("doctor");
-             console.log(result);
             return {
               status:true,
               result

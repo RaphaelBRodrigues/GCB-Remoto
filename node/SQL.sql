@@ -4,7 +4,7 @@ USE GCB;
 CREATE TABLE doctor(
     id INT(5) NOT NULL AUTO_INCREMENT,
     name VARCHAR(35),
-    crm VARCHAR(15),
+    crm VARCHAR(15) UNIQUE,
     phone VARCHAR(12),
     state VARCHAR(2),
     city VARCHAR(30),

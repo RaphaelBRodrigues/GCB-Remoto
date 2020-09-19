@@ -3,6 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="9f90db37-08e8-4752-8bca-ae5d3afa7b29" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.me" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node/SQL.sql" beforeDir="false" afterPath="$PROJECT_DIR$/node/SQL.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/node/controllers/DoctorController.js" beforeDir="false" afterPath="$PROJECT_DIR$/node/controllers/DoctorController.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/node/models/Doctor.js" beforeDir="false" afterPath="$PROJECT_DIR$/node/models/Doctor.js" afterDir="false" />
     </list>
@@ -14,13 +16,19 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/README.md" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+  </component>
   <component name="ProjectId" id="1hhAGyViMw5hzVWeX20b19HsoBL" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -43,22 +51,25 @@
       <updated>1600452859057</updated>
       <workItem from="1600452860181" duration="2146000" />
       <workItem from="1600461033174" duration="1722000" />
-      <workItem from="1600512402008" duration="6792000" />
+      <workItem from="1600512402008" duration="11272000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
   <component name="WindowStateProjectService">
     <state x="1735" y="182" width="618" height="411" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1600454744710">
       <screen x="1366" y="0" width="1366" height="768" />
     </state>
     <state x="1735" y="182" width="618" height="411" key="#com.intellij.fileTypes.FileTypeChooser/1366.0.1366.768/0.0.1366.768@1366.0.1366.768" timestamp="1600454744710" />
-    <state x="63" y="284" width="546" height="302" key="DBNavigator.IdleConnectionDialog" timestamp="1600519498854">
+    <state x="63" y="284" width="556" height="302" key="DBNavigator.IdleConnectionDialog" timestamp="1600521700890">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="63" y="284" width="546" height="302" key="DBNavigator.IdleConnectionDialog/1366.0.1366.768/0.0.1366.768@0.0.1366.768" timestamp="1600519498854" />
+    <state x="63" y="284" width="556" height="302" key="DBNavigator.IdleConnectionDialog/1366.0.1366.768/0.0.1366.768@0.0.1366.768" timestamp="1600521700890" />
     <state x="215" y="41" width="926" height="693" key="DBNavigator.ProjectSettingsDialog" timestamp="1600512975442">
       <screen x="0" y="0" width="1366" height="768" />
     </state>

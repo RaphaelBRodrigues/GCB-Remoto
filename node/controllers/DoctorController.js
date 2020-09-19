@@ -31,14 +31,35 @@ class DoctorController{
 
     }
 
-    async getDoctorById(req,res){
-        const { id } = req.params;
-        console.log("getDoctorById");
-    }
 
     async getDoctorByCrm(req,res){
-        const { crm } = req.body;
-        console.log("getDoctorByCrm");
+        const { crm } = req.params;
+
+        try{
+            const result = await Doctor.getDoctorByCrm(crm);
+            if(result.status){
+                res.json({
+                    result,
+                    status:true
+                });
+                res.status(201);
+            }else{
+                res.status(404);
+                res.json({
+                    result,
+                    message:"Usuário não encontrado"
+                });
+            }
+            return;
+        }catch (err){
+            res.status(400);
+            res.json({
+                err,
+                status:false
+
+            });
+        }
+
 
     }
 
@@ -82,16 +103,15 @@ class DoctorController{
         try{
             const result = await Doctor.delete(id);
 
-            console.log(result);
-            console.log(result.status);
 
             if(result.status){
                 res.status(202);
                 res.send({result});
             }else{
-                res.status(500);
+                res.status(404);
                 res.json({
                     result:result,
+                    message:"O usuário não existe",
                     status:false
 
                 });
@@ -111,11 +131,47 @@ class DoctorController{
     async update(req,res){
         const { name,crm,state,city } = req.body;
         const { id } = req.params;
-        console.log("update");
 
+        const data = {};
+        if(id) {
+            data.id = id;
+            if (name) {
+                data.name = name;
+            }
+            if (crm) {
+                data.crm = crm;
+            }
+            if (state) {
+                data.state = state;
+            }
+            if (city) {
+                data.city = city;
+            }
 
+            try{
+                const result = await Doctor.updateDoctor(data);
+                if(result.status){
+                    res.status(200);
+                    res.json({
+                        result,
+                        status:true
+                    });
+                }else{
+                    res.status(400);
+                    res.json({
+                        err:result.err,
+                        status:false
+                    });
+                }
+            }catch (err){
+                res.status(500);
+                res.json({
+                    err:err,
+                    status:false
+                });
+            }
+        }
     }
-
 }
 
 module.exports = new DoctorController();
