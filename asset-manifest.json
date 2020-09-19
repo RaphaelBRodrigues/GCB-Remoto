@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/GCB-Remoto/static/css/main.56a4d059.chunk.css",
+    "main.js": "/GCB-Remoto/static/js/main.2fabcf28.chunk.js",
+    "main.js.map": "/GCB-Remoto/static/js/main.2fabcf28.chunk.js.map",
+    "runtime-main.js": "/GCB-Remoto/static/js/runtime-main.26cf1f04.js",
+    "runtime-main.js.map": "/GCB-Remoto/static/js/runtime-main.26cf1f04.js.map",
+    "static/js/2.780ab7eb.chunk.js": "/GCB-Remoto/static/js/2.780ab7eb.chunk.js",
+    "static/js/2.780ab7eb.chunk.js.map": "/GCB-Remoto/static/js/2.780ab7eb.chunk.js.map",
+    "index.html": "/GCB-Remoto/index.html",
+    "precache-manifest.dbf7a53f074a23728b232717f78b57f6.js": "/GCB-Remoto/precache-manifest.dbf7a53f074a23728b232717f78b57f6.js",
+    "service-worker.js": "/GCB-Remoto/service-worker.js",
+    "static/css/main.56a4d059.chunk.css.map": "/GCB-Remoto/static/css/main.56a4d059.chunk.css.map",
+    "static/js/2.780ab7eb.chunk.js.LICENSE.txt": "/GCB-Remoto/static/js/2.780ab7eb.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.26cf1f04.js",
+    "static/js/2.780ab7eb.chunk.js",
+    "static/css/main.56a4d059.chunk.css",
+    "static/js/main.2fabcf28.chunk.js"
+  ]
+}
