@@ -32,6 +32,7 @@ header + nav ul li{
     width: 3em;
     height: 3em;
     transition-duration: 0.2s;
+    cursor: pointer;
 
 }
 

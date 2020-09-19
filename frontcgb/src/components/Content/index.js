@@ -1,15 +1,21 @@
-import React from 'react';
+import React, {useState} from 'react';
 import "./index.css";
 
 import List from '../List';
+import CreateForm from '../CreateForm';
 
 import Search from '../Search';
 
-export default () =>{
+export default ({showList ,showCreateUser}) =>{
+
+
+
+
     return(
         <main>
             <Search />
-            {true && <List/>}
+            {showList && <List/>}
+            {showCreateUser && <CreateForm/>}
         </main>
     );
 }

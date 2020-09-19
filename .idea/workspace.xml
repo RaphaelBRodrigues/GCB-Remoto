@@ -2,9 +2,49 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9f90db37-08e8-4752-8bca-ae5d3afa7b29" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/apicgb/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apicgb/SQL.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apicgb/controllers/DoctorController.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apicgb/controllers/SpecialityController.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apicgb/database/connection.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apicgb/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apicgb/models/Doctor.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apicgb/models/Speciality.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apicgb/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apicgb/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apicgb/routes/routes.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontcgb/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontcgb/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontcgb/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontcgb/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontcgb/public/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontcgb/public/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontcgb/public/logo192.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontcgb/public/logo512.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontcgb/public/manifest.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontcgb/public/robots.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontcgb/src/App.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontcgb/src/App.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontcgb/src/App.test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontcgb/src/index.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontcgb/src/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontcgb/src/logo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontcgb/src/serviceWorker.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontcgb/src/setupTests.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node/database/connection.js" beforeDir="false" afterPath="$PROJECT_DIR$/node/database/connection.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node/SQL.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node/controllers/DoctorController.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node/controllers/SpecialityController.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node/database/connection.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node/models/Doctor.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node/models/Speciality.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node/routes/routes.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reactgcb" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,7 +69,7 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/node" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/frontcgb" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -52,7 +92,7 @@
       <updated>1600452859057</updated>
       <workItem from="1600452860181" duration="2146000" />
       <workItem from="1600461033174" duration="1722000" />
-      <workItem from="1600512402008" duration="18107000" />
+      <workItem from="1600512402008" duration="18903000" />
     </task>
     <servers />
   </component>
@@ -75,10 +115,14 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="215" y="41" width="926" height="693" key="DBNavigator.ProjectSettingsDialog/1366.0.1366.768/0.0.1366.768@0.0.1366.768" timestamp="1600512975442" />
-    <state x="1712" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1600530830470">
+    <state x="1831" y="141" width="426" height="493" key="FileChooserDialogImpl" timestamp="1600534234580">
+      <screen x="1366" y="0" width="1366" height="768" />
+    </state>
+    <state x="1831" y="141" width="426" height="493" key="FileChooserDialogImpl/1366.0.1366.768/0.0.1366.768@1366.0.1366.768" timestamp="1600534234580" />
+    <state x="1712" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1600534199635">
       <screen x="1366" y="0" width="1366" height="768" />
     </state>
     <state x="346" y="89" width="672" height="678" key="search.everywhere.popup/1366.0.1366.768/0.0.1366.768@0.0.1366.768" timestamp="1600517237454" />
-    <state x="1712" y="89" width="672" height="678" key="search.everywhere.popup/1366.0.1366.768/0.0.1366.768@1366.0.1366.768" timestamp="1600530830470" />
+    <state x="1712" y="89" width="672" height="678" key="search.everywhere.popup/1366.0.1366.768/0.0.1366.768@1366.0.1366.768" timestamp="1600534199635" />
   </component>
 </project>

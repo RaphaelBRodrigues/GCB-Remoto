@@ -47,6 +47,7 @@ class Doctor{
 
     async delete(id){
         try{
+            await knex.delete().table("doctorsSpeciality").where({doctor_id:id});
             const result = await knex.delete().table("doctor").where({id});
             const status = result ? true : false;
             return {

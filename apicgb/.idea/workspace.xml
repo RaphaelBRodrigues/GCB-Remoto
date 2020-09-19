@@ -2,44 +2,49 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="339d3776-9f5a-477c-93b3-c97b1e9d53ec" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SQL.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/controllers/DoctorController.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/controllers/SpecialityController.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/connection.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/Doctor.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/Speciality.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/routes/routes.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../frontcgb/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../frontcgb/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../frontcgb/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../frontcgb/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../frontcgb/public/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../frontcgb/public/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../frontcgb/public/logo192.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../frontcgb/public/logo512.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../frontcgb/public/manifest.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../frontcgb/public/robots.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../frontcgb/src/App.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../frontcgb/src/assets/styles/global.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../frontcgb/src/blocks/Edit/index.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../frontcgb/src/blocks/Edit/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../frontcgb/src/blocks/List/index.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../frontcgb/src/blocks/List/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../frontcgb/src/components/Content/index.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../frontcgb/src/components/Content/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../frontcgb/src/components/List/handles.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../frontcgb/src/components/List/index.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../frontcgb/src/components/List/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../frontcgb/src/components/Search/index.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../frontcgb/src/components/Search/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../frontcgb/src/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../frontcgb/src/services/api.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../API/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../API/SQL.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../API/controllers/DoctorController.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../API/controllers/SpecialityController.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../API/database/connection.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../API/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../API/models/Doctor.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../API/models/Speciality.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../API/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../API/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../API/routes/routes.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../apiCGB/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../apiCGB/SQL.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../apiCGB/controllers/DoctorController.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../apiCGB/controllers/SpecialityController.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../apiCGB/database/connection.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../apiCGB/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../apiCGB/models/Doctor.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../apiCGB/models/Speciality.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../apiCGB/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../apiCGB/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../apiCGB/routes/routes.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontcgb/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../frontcgb/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontcgb/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../frontcgb/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontcgb/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../frontcgb/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontcgb/src/App.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontcgb/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontcgb/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontcgb/src/App.test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontcgb/src/assets/styles/global.css" beforeDir="false" afterPath="$PROJECT_DIR$/../frontcgb/src/assets/styles/global.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontcgb/src/components/Content/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/../frontcgb/src/components/Content/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontcgb/src/components/Content/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontcgb/src/components/Content/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontcgb/src/components/List/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/../frontcgb/src/components/List/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontcgb/src/components/List/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontcgb/src/components/List/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontcgb/src/components/Search/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/../frontcgb/src/components/Search/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontcgb/src/components/Search/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontcgb/src/components/Search/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontcgb/src/index.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontcgb/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontcgb/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontcgb/src/logo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontcgb/src/serviceWorker.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontcgb/src/services/api.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontcgb/src/services/api.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontcgb/src/setupTests.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../node/.gitignore" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../node/SQL.sql" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../node/controllers/DoctorController.js" beforeDir="false" />
@@ -70,7 +75,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../frontcgb" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -82,11 +87,17 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1600543433674</updated>
-      <workItem from="1600543434733" duration="125000" />
+      <workItem from="1600543434733" duration="260000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="1831" y="141" width="426" height="493" key="FileChooserDialogImpl" timestamp="1600543694811">
+      <screen x="1366" y="0" width="1366" height="768" />
+    </state>
+    <state x="1831" y="141" width="426" height="493" key="FileChooserDialogImpl/1366.0.1366.768/0.0.1366.768@1366.0.1366.768" timestamp="1600543694811" />
   </component>
 </project>

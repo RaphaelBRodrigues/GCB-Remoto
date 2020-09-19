@@ -1,15 +1,22 @@
-import React from 'react';
+import React, {useState} from 'react';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import Content from './components/Content';
 import "./assets/styles/global.css";
 
+
+
 function App() {
-  return (
+
+    const [showList,setShowList] = useState(true);
+    const [showCreateUser,setShowCreateUser] = useState(false);
+
+    return (
     <div className="App">
-        <Header />
-        <Content/>
+        <Header setShowList={setShowList} setShowCreateUser={setShowCreateUser} />
+        <Content showCreateUser={showCreateUser} showList={showList}/>
         <Footer />
+
     </div>
   );
 }

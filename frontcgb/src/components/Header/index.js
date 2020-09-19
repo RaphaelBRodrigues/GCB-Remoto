@@ -5,7 +5,20 @@ import "./index.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPlus , faClipboard } from '@fortawesome/free-solid-svg-icons'
 
-export default () =>{
+export default ({setShowList ,setShowCreateUser }) =>{
+
+
+
+    function showCreateUser(){
+        setShowCreateUser(true);
+        setShowList(false);
+    }
+
+    function showList(){
+        setShowCreateUser(false);
+        setShowList(true);
+    }
+
     return(
         <section>
             <header>
@@ -21,13 +34,13 @@ export default () =>{
              </header>
             <nav>
                 <ul>
-                    <li>
+                    <li onClick={showList}>
                         <FontAwesomeIcon icon={faClipboard} />
                         <p>
                             Listar
                         </p>
                     </li>
-                    <li>
+                    <li onClick={showCreateUser}>
                         <FontAwesomeIcon icon={faPlus} />
                         <p>
                             Criar
