@@ -1,0 +1,25 @@
+#search-block{
+    border: 1px solid var(--project-color-4);
+    background-color: var(--project-color-1);
+    padding: 1.5em;
+    border-radius: 1em;
+    display: flex;
+}
+
+#search-block input{
+    border:0;
+    background-color: rgba(255,255,255,0.1);
+    margin: 0 0em 0 1em;
+    padding: 0.4em 0.2em 0.2em 0.4em;
+    color:white;
+}
+
+#search-block input::placeholder{
+    color:rgba(255,255,255,0.7);
+}
+
+#search-block svg{
+    cursor: pointer;
+    color:var(--project-color-4);
+    height: 100%;
+}

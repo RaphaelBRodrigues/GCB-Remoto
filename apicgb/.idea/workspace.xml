@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="339d3776-9f5a-477c-93b3-c97b1e9d53ec" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SQL.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/controllers/DoctorController.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/controllers/SpecialityController.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/connection.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/Doctor.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/Speciality.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/routes/routes.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontcgb/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontcgb/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontcgb/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontcgb/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontcgb/public/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontcgb/public/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontcgb/public/logo192.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontcgb/public/logo512.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontcgb/public/manifest.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontcgb/public/robots.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontcgb/src/App.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontcgb/src/assets/styles/global.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontcgb/src/blocks/Edit/index.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontcgb/src/blocks/Edit/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontcgb/src/blocks/List/index.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontcgb/src/blocks/List/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontcgb/src/components/Content/index.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontcgb/src/components/Content/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontcgb/src/components/List/handles.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontcgb/src/components/List/index.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontcgb/src/components/List/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontcgb/src/components/Search/index.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontcgb/src/components/Search/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontcgb/src/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontcgb/src/services/api.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../node/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../node/SQL.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../node/controllers/DoctorController.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../node/controllers/SpecialityController.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../node/database/connection.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../node/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../node/models/Doctor.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../node/models/Speciality.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../node/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../node/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../node/routes/routes.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../reactgcb" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1hk7rIeVZPMbD8OluCZgU6UkarR" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="339d3776-9f5a-477c-93b3-c97b1e9d53ec" name="Default Changelist" comment="" />
+      <created>1600543433674</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1600543433674</updated>
+      <workItem from="1600543434733" duration="125000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
