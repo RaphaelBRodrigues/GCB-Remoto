@@ -18,7 +18,7 @@ router.get("/speciality/:id",SpecialityController.getSpecialityById);
 
 
 // Especialidades do doutor
-router.get("/doctorSpeciality",SpecialityController.getDoctorSpecialities);
+router.get("/doctorSpeciality/:id",SpecialityController.getDoctorSpecialities);
 router.post("/doctorSpeciality",SpecialityController.createDoctorSpeciality);
 router.delete("/doctorSpeciality",SpecialityController.deleteDoctorSpecialities);
 

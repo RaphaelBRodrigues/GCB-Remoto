@@ -75,8 +75,8 @@ class SpecialityController{
                 });
             }else {
                 res.json({
-                    doctor_id,
-                    result
+                    result,
+                    status:true
                 });
             }
         }catch (err){
@@ -91,12 +91,32 @@ class SpecialityController{
     }
 
     async getDoctorSpecialities(req,res) {
-        const { doctor_id , specialities } =  req.body;
+        const { id } = req.params;
 
-        res.json({
-            doctor_id,
-            specialities
-        });
+        try{
+            const result = await Speciality.getDoctorSpecialities(id) ;
+
+            if(result.status){
+                res.status(200);
+                res.json({
+                    result,
+                    status:true
+                });
+            }
+            else {
+                res.status(404);
+                res.json({
+                    status:false,
+                    message:"Usuário inválido ou não possui especialidades cadastradas",
+                });
+            }
+        }catch (err){
+            res.status(500);
+            res.json({
+                status:false,
+                err
+            });
+        }
     }
 
     async deleteDoctorSpecialities(req,res) {

@@ -75,8 +75,29 @@ class Speciality{
     }
 
     async getDoctorSpecialities(doctor_id){
-        console.log("getDoctorSpecialities");
-    }
+        try{
+            const result = await knex.select()
+                .from("doctorsSpeciality")
+                    .innerJoin("speciality","speciality.id","doctorsSpeciality.speciality_id")
+                        .where({doctor_id});
+
+            console.log(result);
+            if(result.length > 0){
+                return{
+                    status:true,
+                    result
+                }
+            }else{
+                return {
+                    status: false
+                }
+            }
+        }catch (err){
+            return{
+                status:false,
+                err
+            }
+        }    }
 }
 
 
