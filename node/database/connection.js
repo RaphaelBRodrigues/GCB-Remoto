@@ -15,9 +15,9 @@ const connection = new Knex({
     client:"mysql2",
     connection:{
         host : 'mysql669.umbler.com',
-        user : 'root',
-        password : 'raphaelgcb',
-        database : 'umblerroota'
+        user : 'raphaelgcb',
+        password : 'umblerroota',
+        database : 'gcb'
     }
 });
 
