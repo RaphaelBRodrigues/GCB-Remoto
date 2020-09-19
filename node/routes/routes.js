@@ -13,7 +13,7 @@ router.put("/doctor/:id",DoctorController.update);
 
 
 //Specialities
-router.get("/specialities",SpecialityController.getSpecialities);
+router.get("/speciality",SpecialityController.getSpecialities);
 router.get("/speciality/:id",SpecialityController.getSpecialityById);
 
 
