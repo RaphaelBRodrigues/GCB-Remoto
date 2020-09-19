@@ -26,7 +26,20 @@ class Doctor{
     }
 
     async delete(id){
-        console.log("delete");
+        try{
+            const result = await knex.delete().table("doctor").where({id});
+            console.log(result);
+            return {
+                status:true,
+                result
+            };
+        }catch (err){
+            return {
+                status:false,
+                err
+            };
+
+        }
     }
 
     async updateDoctor(id,name,crm,state,city){

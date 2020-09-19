@@ -57,12 +57,12 @@ class DoctorController{
                 });
                 res.status(201);
             }else{
+                res.status(500);
                 res.json({
                     result:result,
                     status:false
 
                 });
-                res.status(500);
             }
             return;
         }catch (err){
@@ -78,7 +78,32 @@ class DoctorController{
 
     async delete(req,res){
         const { id } = req.params;
-        console.log("delete");
+
+        try{
+            const result = await Doctor.delete(id);
+
+            console.log(result);
+            console.log(result.status);
+
+            if(result.status){
+                res.status(202);
+                res.send({result});
+            }else{
+                res.status(500);
+                res.json({
+                    result:result,
+                    status:false
+
+                });
+            }
+            return;
+        }catch (err){
+            res.status(400);
+            res.json({
+                err,
+                status:false
+            });
+        }
 
 
     }
