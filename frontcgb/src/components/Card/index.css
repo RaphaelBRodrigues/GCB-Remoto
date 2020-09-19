@@ -1,0 +1,19 @@
+#doctor-card{
+    width: 100%;
+    margin: 1em 0em;
+}
+
+
+#doctor-card fieldset{
+    width: 100%;
+}
+
+#doctor-card fieldset div{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#doctor-card fieldset div + div{
+    background-color: blue;
+}
+
