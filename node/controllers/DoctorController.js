@@ -2,7 +2,33 @@ const Doctor = require("../models/Doctor");
 
 class DoctorController{
     async getDoctors(req,res){
-        console.log("getDoctors");
+
+        try{
+            const result = await Doctor.getDoctors();
+            if(result.status){
+                res.json({
+                    result,
+                    status:true
+                });
+                res.status(201);
+            }else{
+                res.json({
+                    result,
+                    status:false
+                });
+                res.status(500);
+            }
+            return;
+        }catch (err){
+            res.status(400);
+            res.json({
+                err,
+                status:false
+
+            });
+        }
+
+
     }
 
     async getDoctorById(req,res){
@@ -25,14 +51,16 @@ class DoctorController{
             const result = await Doctor.createDoctor(data);
             if(result.status){
                 res.json({
-                    status:true,
-                    result
+                    result,
+                    status:true
+
                 });
                 res.status(201);
             }else{
                 res.json({
-                    status:false,
-                    result
+                    result:result,
+                    status:false
+
                 });
                 res.status(500);
             }
@@ -40,8 +68,8 @@ class DoctorController{
         }catch (err){
             res.status(400);
             res.json({
-                status:false,
                 err,
+                status:false
             });
         }
 

@@ -2,27 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9f90db37-08e8-4752-8bca-ae5d3afa7b29" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/GCB.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/README.me" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TESTE VAGA BACK.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node/SQL.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node/controllers/DoctorController.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node/controllers/SpecialityController.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node/database/connection.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node/models/Doctor.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node/models/Speciality.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node/routes/routes.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reactgcb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node/SQL.sql" beforeDir="false" afterPath="$PROJECT_DIR$/node/SQL.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node/controllers/DoctorController.js" beforeDir="false" afterPath="$PROJECT_DIR$/node/controllers/DoctorController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node/models/Doctor.js" beforeDir="false" afterPath="$PROJECT_DIR$/node/models/Doctor.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node/routes/routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/node/routes/routes.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,7 +45,7 @@
       <updated>1600452859057</updated>
       <workItem from="1600452860181" duration="2146000" />
       <workItem from="1600461033174" duration="1722000" />
-      <workItem from="1600512402008" duration="5031000" />
+      <workItem from="1600512402008" duration="5629000" />
     </task>
     <servers />
   </component>

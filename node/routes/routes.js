@@ -4,7 +4,7 @@ const SpecialityController = require("../controllers/SpecialityController");
 
 
 //Doctor
-router.get("/doctors",DoctorController.getDoctors);
+router.get("/doctor",DoctorController.getDoctors);
 router.get("/doctor/:crm",DoctorController.getDoctorByCrm);
 
 router.post("/doctor",DoctorController.create);
@@ -23,7 +23,7 @@ router.get("/",(req,res)=>{
         routes:[
             {
                 method:"get",
-                route:"/doctors",
+                route:"/doctor",
                 description:"Recupera todos os médicos"
             },
             {

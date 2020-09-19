@@ -4,8 +4,22 @@ const knex = require("../database/connection");
 class Doctor{
 
     async getDoctors(){
-        console.log("getDoctors");
-    }
+
+        try{
+            const result = await knex.select().from("doctor");
+            console.log(result);
+            return {
+                status:true,
+                result
+            };
+        }catch (err){
+            return {
+                status:false,
+                err
+            };
+
+        }
+}
 
     async getDoctorById(id){
         console.log("getDoctorById");
