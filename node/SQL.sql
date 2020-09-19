@@ -1,0 +1,42 @@
+CREATE DATABASE GCB;
+USE GCB;
+
+CREATE TABLE doctor(
+    id INT(5) NOT NULL AUTO_INCREMENT,
+    name VARCHAR(35),
+    crm VARCHAR(15),
+    phone VARCHAR(12),
+    state VARCHAR(2),
+    city VARCHAR(30),
+    PRIMARY KEY(id)
+);
+
+CREATE TABLE speciality(
+    id INT(2) NOT NULL AUTO_INCREMENT,
+    name VARCHAR(60),
+    PRIMARY KEY(id)
+);
+
+CREATE TABLE doctorsSpeciality(
+    id INT(1) NOT NULL AUTO_INCREMENT,
+    doctor_id INT(5),
+    speciality_id INT(1),
+    PRIMARY KEY(id),
+    FOREIGN KEY(doctor_id) REFERENCES doctor(id),
+    FOREIGN KEY(speciality_id) REFERENCES speciality(id)
+);
+
+INSERT INTO specialty VALUES (null,"ALERGOLOGIA");
+INSERT INTO specialty VALUES (null,"ANGIOLOGIA");
+INSERT INTO specialty VALUES (null,"BUCO MAXILO");
+INSERT INTO specialty VALUES (null,"CARDIOLOGIA CLÍNICA");
+INSERT INTO specialty VALUES (null,"CARDIOLOGIA INFANTIL");
+INSERT INTO specialty VALUES (null,"CIRURGIA CABEÇA E PESCOÇO");
+INSERT INTO specialty VALUES (null,"CIRURGIA CABEÇA E PESCOÇO");
+INSERT INTO specialty VALUES (null,"CIRURGIA DE TORAX");
+INSERT INTO specialty VALUES (null,"CIRURGIA GERAL");
+INSERT INTO specialty VALUES (null,"CIRURGIA PEDIÁTRICA");
+INSERT INTO specialty VALUES (null,"CIRURGIA PLÁSTICA");
+INSERT INTO specialty VALUES (null,"CIRURGIA TORÁCIC");
+INSERT INTO specialty VALUES (null,"CIRURGIA VASCULAR");
+INSERT INTO specialty VALUES (null,"CLÍNICA MÉDICA");
