@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import { deleteDoctor , updateDoctor , getDoctorSpecialities , deleteSpecialityAPI } from "./handles";
 import "./index.css";
+import ModalSpeciality from '../ModalSpeciality';
 
 export default ({ doctor , updateList }) => {
 
@@ -10,6 +11,9 @@ export default ({ doctor , updateList }) => {
     const [phone,setPhone] = useState(doctor.phone);
     const [state,setState] = useState(doctor.state);
     const [city,setCity] = useState(doctor.city);
+
+    const [showModalSpeciality,setShowModalSpeciality] = useState(false);
+
 
     const [specialities,setSpecialities] = useState([]);
 
@@ -21,7 +25,7 @@ export default ({ doctor , updateList }) => {
 
         if(sure){
             await deleteDoctor(id);
-            updateList(id);
+            updateList(id + Date.now());
         }
     }
 
@@ -29,7 +33,6 @@ export default ({ doctor , updateList }) => {
         const resp = await getDoctorSpecialities(doctor.id);
 
         setSpecialities(resp);
-
         return resp;
     };
 
@@ -70,22 +73,27 @@ export default ({ doctor , updateList }) => {
             doctor_id:doctor.id
         }
 
-        console.log(data);
+        const sure = window.confirm("Tem certeza de que deseja deletar esta especialidade");
 
-        const res = await deleteSpecialityAPI(data);
-
-        console.log(res);
-
-        if(res){
-            alert("Especialidade deletada");
-            updateList(doctor.id);
+        if(sure) {
+            const res = await deleteSpecialityAPI(data);
+            if (res) {
+                alert("Especialidade deletada");
+                await listSpecialities();
+            }
         }
+    }
 
+    function createNewSpeciality(){
+        alert(doctor.id);
     }
 
 
     return (
         <section id="doctor-card">
+            {showModalSpeciality ?
+                <ModalSpeciality doctorsSpecialities={specialities} updateList={updateList} doctor_name={doctor.name} doctor_id={doctor.id} showModalSpeciality={showModalSpeciality} setShowModalSpeciality={setShowModalSpeciality} />
+                : null}
             <fieldset>
                 <legend>
                     {isEditable ? <input onChange={(e)=>setName(e.target.value)} value={name}/> :doctor.name}
@@ -114,7 +122,9 @@ export default ({ doctor , updateList }) => {
                            <ul>
                                <li>
                                     Especialidades
+
                                </li>
+
                                {specialities.map((speciality,index)=>{
                                    return (
                                        <li key={index}>
@@ -127,14 +137,21 @@ export default ({ doctor , updateList }) => {
 
                         </div>
                     </div>
-                    <button type={"button"} onClick={()=>confirmDeleteDoctor(doctor.id)}>
+                    <button className={"danger"} type={"button"} onClick={()=>confirmDeleteDoctor(doctor.id)}>
                         Deletar
                     </button>
                     <button type={"button"} onClick={()=>{setIsEditable(!isEditable)}}>
                         {isEditable ? "Voltar" : "Atualizar"}
                     </button>
+
                     {isEditable ?
-                        <button form={"update"+doctor.id} type={"submit"}>
+                        <button className={"primary"} onClick={()=>{setShowModalSpeciality(!showModalSpeciality)}} type={"button"}>
+                            Adicionar nova especialidade
+                        </button>
+                        : null}
+
+                    {isEditable ?
+                        <button className={"success"} form={"update"+doctor.id} type={"submit"}>
                             Salvar
                         </button>
                         : null}

@@ -1,0 +1,43 @@
+#speciality-modal{
+    background-color: rgba(0,0,0,0.5);
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    left: 0;
+    top:0;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    z-index: 100;
+    align-items: center;
+    overflow-y: auto;
+}
+
+#speciality-modal fieldset{
+    background-color: rgba(255,255,255,0.1);
+    width: 50%;
+    border-radius: 1.5em;
+    display: flex;
+}
+
+#speciality-modal fieldset div ul li{
+    margin-top: 0.8em;
+    display: flex;
+}
+
+#speciality-modal fieldset div ul li button {
+cursor: pointer;
+}
+
+
+#speciality-modal fieldset div + div{
+    display: flex;
+    width: 100%;
+    margin-left: 0;
+    padding: 0;
+    justify-content: space-around;
+}
+#speciality-modal fieldset div + div button{
+    width: 40%;
+}
+
