@@ -3,10 +3,15 @@ import "./index.css";
 
 
 import {createDoctorAPI} from "./handles";
+import ModalSpeciality from "../ModalSpeciality";
 
 
 
 export default ({ setShowList , setShowCreateUser}) => {
+
+    const [showModalSpeciality,setShowModalSpeciality] = useState(false);
+    const [doctorCreatedInfo,setDoctorCreatedInfo] = useState({});
+    const [goToHome, setGoToHome] = useState(false);
 
     async function createDoctor(e){
         e.preventDefault();
@@ -21,18 +26,28 @@ export default ({ setShowList , setShowCreateUser}) => {
 
         const res = await createDoctorAPI(data);
 
+
         if(res){
             alert("Usuário cadastrado com sucesso!!");
-            setShowCreateUser(false);
-            setShowList(true);
+            setDoctorCreatedInfo({name,id:res,status:true});
         }else{
             alert("Ocorreu uma falha ao cadastrar o usuário");
         }
     }
 
+    useEffect(()=>{
+        if(goToHome){
+            setShowCreateUser(false);
+            setShowList(true);
+        }
+    },[goToHome]);
+
 
     return (
         <section id="doctor-create-form">
+            {doctorCreatedInfo.status == true  ?
+                <ModalSpeciality doctorsSpecialities={[]} create setGoToHome={setGoToHome} doctor_name={doctorCreatedInfo.name} doctor_id={doctorCreatedInfo.id} showModalSpeciality={showModalSpeciality} setShowModalSpeciality={setShowModalSpeciality} />
+                : null}
             <form method={"post"} onSubmit={createDoctor}>
                 <fieldset>
                     <legend>

@@ -3,7 +3,9 @@ import { createDoctorSpeciality , getSpecialities } from './handles';
 import "./index.css";
 
 
-export default ({ doctor_id , doctor_name , setShowModalSpeciality , updateList , doctorsSpecialities}) => {
+export default ({ doctor_id , doctor_name , setShowModalSpeciality , updateList , doctorsSpecialities , create}) => {
+
+
 
 
     const [specialities,setSpecialities] = useState([]);
@@ -18,7 +20,6 @@ export default ({ doctor_id , doctor_name , setShowModalSpeciality , updateList 
     async function addSpeciality(speciality_id){
         const specialitiesList = newSpecialities;
         specialitiesList.push(speciality_id);
-
         setNewSpecialities(specialitiesList);
 
     }
@@ -30,7 +31,9 @@ export default ({ doctor_id , doctor_name , setShowModalSpeciality , updateList 
 
 
         if(res){
-            updateList();
+            if(!create){
+                updateList();
+            }
             setShowModalSpeciality(false);
             window.location.reload(false);  // TEMPORÁRIO - ARRUMAR O RELOAD DA LISTA!!!
             alert("Especialidades salvas");
