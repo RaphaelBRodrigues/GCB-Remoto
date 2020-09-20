@@ -25,3 +25,15 @@
 ### Front-end
 * React
 * Axios
+
+#### Layout
+![main](images/home.png)
+<hr/>
+
+![main2](images/home.png)
+<hr/>
+
+![edit](images/edit.png)
+<hr/>
+
+![create](images/create.png)
