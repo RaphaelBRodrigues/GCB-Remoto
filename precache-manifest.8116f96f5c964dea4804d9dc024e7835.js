@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "624090767df8640557ce2539da0e73ce",
+    "revision": "a5a7d6bdbc1f049f2ee7ffdb7a26a95f",
     "url": "/GCB-Remoto/index.html"
   },
   {
-    "revision": "56b191e79699f013edb1",
-    "url": "/GCB-Remoto/static/css/main.f16c3c9e.chunk.css"
+    "revision": "b0208ca2ac088171ce63",
+    "url": "/GCB-Remoto/static/css/main.becad5ef.chunk.css"
   },
   {
     "revision": "d04c18334b2256d944c6",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/GCB-Remoto/static/js/2.be264c17.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "56b191e79699f013edb1",
-    "url": "/GCB-Remoto/static/js/main.546d43bb.chunk.js"
+    "revision": "b0208ca2ac088171ce63",
+    "url": "/GCB-Remoto/static/js/main.d6bb682a.chunk.js"
   },
   {
     "revision": "5adf7ee54d0ad9a4e231",
