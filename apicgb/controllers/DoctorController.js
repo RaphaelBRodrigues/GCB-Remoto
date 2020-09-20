@@ -129,7 +129,7 @@ class DoctorController{
     }
 
     async update(req,res){
-        const { name,crm,state,city } = req.body;
+        const { name,crm,state,city,phone } = req.body;
         const { id } = req.params;
 
         const data = {};
@@ -137,6 +137,9 @@ class DoctorController{
             data.id = id;
             if (name) {
                 data.name = name;
+            }
+              if (phone) {
+                data.phone = phone;
             }
             if (crm) {
                 data.crm = crm;
