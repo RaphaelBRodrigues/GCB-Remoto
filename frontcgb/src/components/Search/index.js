@@ -15,7 +15,6 @@ export default ({setCustomSearchDoctors,setShowRawList}) => {
     const [beRed,setBeRed] = useState(false);
     async function searchByCrm(){
         try{
-            setCustomDoctorsIntern([]);
 
             if(crm.length > 1){
                 const crmSearch = parseInt(crm);
@@ -51,12 +50,17 @@ export default ({setCustomSearchDoctors,setShowRawList}) => {
 
 
     useEffect(()=>{
+        setCustomDoctorsIntern([]);
+        setCustomSearchDoctors([]);
+        setShowRawList(true);
         if(customDoctorsIntern.length > 0 && crm){
             setShowRawList(false);
+            searchByCrm().then();
         }else{
             setCustomDoctorsIntern([]);
             setShowRawList(true);
         }
+
 
 
 
@@ -77,8 +81,8 @@ export default ({setCustomSearchDoctors,setShowRawList}) => {
                   crm.length > 0 ?
                   beRed ? {border:"1px solid red",boxShadow:"0 0 10px red"}: {border:"1px solid rgba(0,0,0,0)"} : null
               }
-              onKeyDown={(e)=>{
-                  setCrm(e.target.value);
+              onSelect={()=>{
+                  searchByCrm().then();
               }}
               value={crm}
               onChange={(e)=>{
