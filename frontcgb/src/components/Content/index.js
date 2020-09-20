@@ -17,7 +17,7 @@ export default ({showList ,showCreateUser , setShowList , setShowCreateUser}) =>
 
     return(
         <main>
-            <Search setShowRawList={setShowRawList} setCustomSearchDoctors={setCustomSearchDoctors} />
+            {showList && <Search setShowRawList={setShowRawList} setCustomSearchDoctors={setCustomSearchDoctors} /> }
             {showList && <List showRawList={showRawList} customSearchDoctors={customSearchDoctors} />}
             {showCreateUser && <CreateForm setShowList={setShowList} setShowCreateUser={setShowCreateUser}/>}
         </main>

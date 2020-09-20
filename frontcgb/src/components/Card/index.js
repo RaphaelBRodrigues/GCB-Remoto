@@ -112,7 +112,7 @@ export default ({ doctor , updateList }) => {
                                         <label> CRM:</label> {isEditable ? <input  name={"crm"} onChange={(e)=>setCrm(e.target.value)} value={crm}/> :doctor.crm}
                                     </li>
                                     <li>
-                                        <label>  Estado: </label>{isEditable ? <input name={"state"} onChange={(e)=>setState(e.target.value)} value={state}/> :doctor.state}
+                                        <label>  Estado: </label>{isEditable ? <input maxLength={2} name={"state"} onChange={(e)=>setState(e.target.value)} value={state}/> :doctor.state}
                                     </li>
                                     <li>
                                         <label> Cidade:</label> {isEditable ? <input  name={"city"} onChange={(e)=>setCity(e.target.value)} value={city}/> :doctor.city}
