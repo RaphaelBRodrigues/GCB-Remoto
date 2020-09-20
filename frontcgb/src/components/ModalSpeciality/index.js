@@ -84,9 +84,12 @@ export default ({ doctor_id , doctor_name , setShowModalSpeciality , updateList 
                     </ul>
                 </div>
                 <div>
-                    <button onClick={()=>setShowModalSpeciality(false)} >
-                        Voltar
-                    </button>
+                    {!create
+                        ?  <button onClick={()=>setShowModalSpeciality(false)} >
+                            Voltar
+                        </button>
+                        :null }
+
                     <button className={"success"} onClick={()=>saveSpecialities()} >
                         Salvar
                     </button>

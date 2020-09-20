@@ -24,14 +24,18 @@ export default ({ setShowList , setShowCreateUser}) => {
 
         const data = {name,crm,phone,state,city};
 
-        const res = await createDoctorAPI(data);
+        if(!name || !crm || !phone || !state || !city){
+            alert("Dados inválidos");
+        }else {
+            const res = await createDoctorAPI(data);
 
 
-        if(res){
-            alert("Usuário cadastrado com sucesso!!");
-            setDoctorCreatedInfo({name,id:res,status:true});
-        }else{
-            alert("Ocorreu uma falha ao cadastrar o usuário");
+            if (res) {
+                alert("Usuário cadastrado com sucesso!!");
+                setDoctorCreatedInfo({name, id: res, status: true});
+            } else {
+                alert("Ocorreu uma falha ao cadastrar o usuário");
+            }
         }
     }
 
@@ -58,13 +62,13 @@ export default ({ setShowList , setShowCreateUser}) => {
                             <label>
                                 Nome do médico
                             </label>
-                            <input placeholder={"Ex:Raphael Barbosa Rodrigues"} name={"name"} id={"name"}/>
+                            <input minLength={3}  placeholder={"Ex:Raphael Barbosa Rodrigues"} name={"name"} id={"name"}/>
                         </div>
                         <div>
                             <label>
                                 CRM
                             </label>
-                            <input placeholder={"Ex:3424234"}  name={"crm"} id={"crm"}/>
+                            <input type={"number"} placeholder={"Ex:3424234"}  name={"crm"} id={"crm"}/>
                         </div>
                         <div>
                             <label>

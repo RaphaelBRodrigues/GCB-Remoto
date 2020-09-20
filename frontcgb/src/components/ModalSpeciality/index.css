@@ -18,15 +18,29 @@
     width: 50%;
     border-radius: 1.5em;
     display: flex;
+    height: 90%;
+    overflow-y: auto;
+}
+
+#speciality-modal fieldset div ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 70vh;
+
 }
 
 #speciality-modal fieldset div ul li{
-    margin-top: 0.8em;
     display: flex;
+    margin-top: 0.8em;
+    height: 1.2em;
+
 }
 
 #speciality-modal fieldset div ul li button {
 cursor: pointer;
+    height: 1.5em;
+    margin-top: -0em;
 }
 
 
@@ -38,6 +52,7 @@ cursor: pointer;
     justify-content: space-around;
 }
 #speciality-modal fieldset div + div button{
+    margin-top: 3em;
     width: 40%;
 }
 
