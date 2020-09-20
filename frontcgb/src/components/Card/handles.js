@@ -9,6 +9,7 @@ async function deleteDoctor(id){
 }
 
 async function updateDoctor(data,doctor_id){
+
     const response = await api.put("/doctor/"+doctor_id,{...data});
     const { result } = response.data.result;
 
@@ -28,14 +29,21 @@ async function getSpecialities(doctor_id){
     return [];
 }
 
-async function deleteSpecialities(data,doctor_id){
-    const response = await api.put("/doctor/"+doctor_id,{...data});
-    const { result } = response.data.result;
+async function deleteSpecialityAPI(data){
+    console.clear();
+    console.log(data);
+    try{
+        const response = await api.get("/doctorSpeciality",data);
+        const { result } = response.data.result;
+        console.log(result);
 
+        return result;
+    }catch (err){
+        return false;
+    }
 
-    return result;
 }
 
 
 
-export { deleteDoctor , updateDoctor ,getSpecialities };
+export { deleteDoctor , updateDoctor ,getSpecialities , deleteSpecialityAPI };

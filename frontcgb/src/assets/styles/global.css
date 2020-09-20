@@ -13,7 +13,7 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: var(--project-color-5);
+    background-color: var(--project-color-1);
     font-family: var(--project-font-default);
 }
 
@@ -24,4 +24,29 @@ body {
 
 ul {
     list-style: none;
+}
+
+input{
+    border:0;
+    background-color: rgba(255,255,255,0.1);
+    margin: 0 0em 0 1em;
+    padding: 0.4em 0.2em 0.2em 0.4em;
+    color:white;
+}
+
+input::placeholder{
+    color:rgba(255,255,255,0.7);
+}
+
+button {
+    background-color: rgba(0,0,0,1);
+    border: 0;
+    box-shadow: 0 0 10px black;
+    font-size: 1em;
+    padding: 0.2em 0.5em;
+    color:var(--project-color-5);
+}
+a{
+    color:inherit;
+    text-decoration: navajowhite;
 }

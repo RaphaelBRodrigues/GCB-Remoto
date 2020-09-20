@@ -8,13 +8,13 @@ import "./assets/styles/global.css";
 
 function App() {
 
-    const [showList,setShowList] = useState(false);
-    const [showCreateUser,setShowCreateUser] = useState(true);
+    const [showList,setShowList] = useState(true);
+    const [showCreateUser,setShowCreateUser] = useState(false);
 
     return (
     <div className="App">
         <Header setShowList={setShowList} setShowCreateUser={setShowCreateUser} />
-        <Content showCreateUser={showCreateUser} showList={showList}/>
+        <Content  setShowList={setShowList} setShowCreateUser={setShowCreateUser} showCreateUser={showCreateUser}  showList={showList}/>
         <Footer />
 
     </div>

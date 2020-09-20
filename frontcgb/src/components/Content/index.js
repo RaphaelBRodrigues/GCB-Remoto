@@ -6,7 +6,7 @@ import CreateForm from '../CreateForm';
 
 import Search from '../Search';
 
-export default ({showList ,showCreateUser}) =>{
+export default ({showList ,showCreateUser , setShowList , setShowCreateUser}) =>{
 
 
 
@@ -15,7 +15,7 @@ export default ({showList ,showCreateUser}) =>{
         <main>
             <Search />
             {showList && <List />}
-            {showCreateUser && <CreateForm/>}
+            {showCreateUser && <CreateForm setShowList={setShowList} setShowCreateUser={setShowCreateUser}/>}
         </main>
     );
 }

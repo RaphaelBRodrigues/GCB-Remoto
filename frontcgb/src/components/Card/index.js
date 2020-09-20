@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react';
-import { deleteDoctor , updateDoctor , getSpecialities } from "./handles";
+import { deleteDoctor , updateDoctor , getSpecialities , deleteSpecialityAPI } from "./handles";
 import "./index.css";
 
 export default ({ doctor , updateList }) => {
@@ -28,7 +28,6 @@ export default ({ doctor , updateList }) => {
     async function listSpecialities(){
         const resp = await getSpecialities(doctor.id);
 
-        console.log(resp);
         setSpecialities(resp);
 
         return resp;
@@ -53,8 +52,6 @@ export default ({ doctor , updateList }) => {
 
         const data = {name,crm,phone,state,city};
 
-        console.log(data);
-
         const res = await updateDoctor(data,doctor.id);
 
         if(res){
@@ -66,6 +63,24 @@ export default ({ doctor , updateList }) => {
             setIsEditable(false);
         }
     }
+
+   async function deleteSpeciality(speciality_id){
+        const data = {
+            speciality_id,
+            doctor_id:doctor.id
+        }
+
+        const res = await deleteSpecialityAPI(data);
+
+        console.log(res);
+
+        if(res){
+            alert("Especialidade deletada");
+            updateList(doctor.id);
+        }
+
+    }
+
 
     return (
         <section id="doctor-card">
@@ -99,7 +114,12 @@ export default ({ doctor , updateList }) => {
                                     Especialidades
                                </li>
                                {specialities.map((speciality,index)=>{
-                                   return <li key={index}>{speciality.name}</li>
+                                   return (
+                                       <li key={index}>
+                                           {speciality.name}
+                                           {isEditable && <sup onClick={()=>{deleteSpeciality(speciality.id)}}>X</sup>}
+                                       </li>
+                                   );
                                })}
                            </ul>
 
@@ -109,7 +129,7 @@ export default ({ doctor , updateList }) => {
                         Deletar
                     </button>
                     <button type={"button"} onClick={()=>{setIsEditable(!isEditable)}}>
-                        Atualizar
+                        {isEditable ? "Voltar" : "Atualizar"}
                     </button>
                     {isEditable ?
                         <button form={"update"+doctor.id} type={"submit"}>

@@ -59,3 +59,7 @@
 #doctor-card fieldset button {
     margin-left: 1em;
 }
+
+#doctor-card fieldset ul li sup {
+    cursor: pointer;
+}

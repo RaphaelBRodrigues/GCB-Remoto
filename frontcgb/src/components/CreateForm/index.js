@@ -6,7 +6,7 @@ import {createDoctorAPI} from "./handles";
 
 
 
-export default () => {
+export default ({ setShowList , setShowCreateUser}) => {
 
     async function createDoctor(e){
         e.preventDefault();
@@ -23,6 +23,8 @@ export default () => {
 
         if(res){
             alert("Usuário cadastrado com sucesso!!");
+            setShowCreateUser(false);
+            setShowList(true);
         }else{
             alert("Ocorreu uma falha ao cadastrar o usuário");
         }
