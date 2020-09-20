@@ -120,7 +120,7 @@ class SpecialityController{
     }
 
     async deleteDoctorSpecialities(req,res) {
-        const { doctor_id , speciality_id } =  req.body;
+        const { doctor_id , speciality_id } =  req.params;
 
         try{
             const result = await Speciality.deleteDoctorSpecialities(doctor_id,speciality_id) ;

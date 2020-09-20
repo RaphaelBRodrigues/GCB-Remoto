@@ -20,7 +20,7 @@ router.get("/speciality/:id",SpecialityController.getSpecialityById);
 // Especialidades do doutor
 router.get("/doctorSpeciality/:id",SpecialityController.getDoctorSpecialities);
 router.post("/doctorSpeciality",SpecialityController.createDoctorSpeciality);
-router.delete("/doctorSpeciality",SpecialityController.deleteDoctorSpecialities);
+router.delete("/doctorSpeciality/:doctor_id/:speciality_id",SpecialityController.deleteDoctorSpecialities);
 
 
 //Home
@@ -79,7 +79,7 @@ router.get("/",(req,res)=>{
             },
             {
                 method: "Delete",
-                route:"/doctorSpeciality",
+                route:"/doctorSpeciality/:doctor_id/:speciality_id",
                 description:"Deleta uma especialidade do médico"
             },
         ]

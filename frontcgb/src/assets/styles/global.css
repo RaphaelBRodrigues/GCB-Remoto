@@ -50,3 +50,28 @@ a{
     color:inherit;
     text-decoration: navajowhite;
 }
+
+.warning{
+    background-color: yellow;
+    color:white;
+}
+
+.danger{
+    background-color: red;
+    color:white;
+}
+
+.success{
+    background-color: green;
+    color:white;
+}
+
+.primary{
+    background-color: deepskyblue;
+    color:white;
+}
+
+.disabled{
+    background-color: rgba(0,0,0,0.2);
+    color:gray;
+}
