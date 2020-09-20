@@ -30,14 +30,11 @@ async function getDoctorSpecialities(doctor_id){
 }
 
 async function deleteSpecialityAPI(data){
-    console.clear();
     const {doctor_id , speciality_id } = data;
 
     try{
         const response = await api.delete(`/doctorSpeciality/${doctor_id}/${speciality_id}`);
         const { result } = response.data.result;
-
-        console.log(result);
 
         return result;
     }catch (err){

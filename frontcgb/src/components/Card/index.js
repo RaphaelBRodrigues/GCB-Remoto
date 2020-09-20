@@ -5,6 +5,7 @@ import ModalSpeciality from '../ModalSpeciality';
 
 export default ({ doctor , updateList }) => {
 
+
    //Form
     const [name,setName] = useState(doctor.name);
     const [crm,setCrm] = useState(doctor.crm);

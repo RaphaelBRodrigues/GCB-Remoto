@@ -5,6 +5,7 @@ import "./index.css";
 
 export default ({ doctor_id , doctor_name , setShowModalSpeciality , updateList , doctorsSpecialities}) => {
 
+
     const [specialities,setSpecialities] = useState([]);
     const [newSpecialities,setNewSpecialities] = useState([]);
 
@@ -29,8 +30,9 @@ export default ({ doctor_id , doctor_name , setShowModalSpeciality , updateList 
 
 
         if(res){
+            updateList();
             setShowModalSpeciality(false);
-            updateList(Date.now());
+            window.location.reload(false);  // TEMPORÁRIO - ARRUMAR O RELOAD DA LISTA!!!
             alert("Especialidades salvas");
         }else{
             alert("Ocorreu um erro ao salvar as especialidades");
@@ -51,7 +53,7 @@ export default ({ doctor_id , doctor_name , setShowModalSpeciality , updateList 
                 <div>
 
                     <ul>
-                        {specialities.map((speciality)=>{
+                        {specialities.map((speciality,index)=>{
 
                            const isAlready = doctorsSpecialities.some((doctorSpeciality)=>{
                                 return doctorSpeciality.id == speciality.id;
@@ -61,7 +63,7 @@ export default ({ doctor_id , doctor_name , setShowModalSpeciality , updateList 
                                 return false;
                             }else {
                                 return (
-                                    <li>
+                                    <li key={index}>
                                         {speciality.name}
                                         <button
                                             className={"success"}
