@@ -9,6 +9,13 @@ import {getDoctors, getDoctorSpeciality} from "./handles";
 
 export default ({ customSearchDoctors , showRawList }) => {
 
+    useEffect(()=>{
+        window.scroll({
+            top: 100,
+            behavior: "smooth"
+        });
+    },[showRawList]);
+
 
     const [doctors,setDoctors] = useState([]);
     const [specialities,setSpecialities] = useState([]);

@@ -12,33 +12,53 @@ export default ({setCustomSearchDoctors,setShowRawList}) => {
 
     const [crm,setCrm] = useState("");
     const [customDoctorsIntern,setCustomDoctorsIntern] = useState([]);
-
+    const [beRed,setBeRed] = useState(false);
     async function searchByCrm(){
-
         try{
-            const res = await getDoctorByCrm(parseInt(crm));
-            console.log(res);
-            if(res.length > 0){
-                setCustomSearchDoctors(res);
-                setCustomDoctorsIntern(res);
+            setCustomDoctorsIntern([]);
+
+            if(crm.length > 1){
+                const crmSearch = parseInt(crm);
+                const res = await getDoctorByCrm(parseInt(crmSearch));
+                if(res.length > 0){
+
+                    setCustomSearchDoctors(res);
+                    setCustomDoctorsIntern(res);
+                    setBeRed(false);
+                    if(typeof crmSearch != "Number") {
+                        setShowRawList(false);
+                    }else{
+                        setShowRawList(true);
+                        alert();
+                    }
+
+
+                }else{
+                    setBeRed(true);
+                    setShowRawList(true);
+                }
             }else{
-                alert("Médico não encontrado");
+                setShowRawList(true);
             }
+
         }catch (err){
             console.error(err);
+            setBeRed(true);
             setShowRawList(true);
-            alert("Médico não encontrado!");
         }
-
     }
 
     useEffect(()=>{
-        if(customDoctorsIntern.length > 0){
+        if(customDoctorsIntern.length > 0 && crm){
             setShowRawList(false);
         }else{
+            setCustomDoctorsIntern([]);
             setShowRawList(true);
         }
-    },[customDoctorsIntern]);
+
+
+
+    },[crm]);
 
 
     return (
@@ -50,9 +70,17 @@ export default ({setCustomSearchDoctors,setShowRawList}) => {
           <input
               placeholder={"Insira o CRM do médico"}
               type="text"
+              style={
+                  crm.length > 0 ?
+                  beRed ? {border:"1px solid red",boxShadow:"0 0 10px red"}: {border:"1px solid rgba(0,0,0,0)"} : null
+              }
+              onKeyDown={(e)=>{
+                  setCrm(e.target.value);
+              }}
               value={crm}
               onChange={(e)=>{
                   setCrm(e.target.value);
+                  searchByCrm().then();
               }}
           />
         </div>
