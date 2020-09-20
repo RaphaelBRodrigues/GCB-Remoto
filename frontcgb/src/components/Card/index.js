@@ -53,48 +53,52 @@ export default ({ doctor , updateList }) => {
     return (
         <section id="doctor-card">
             <fieldset>
-                <form id={"update"+doctor.id} onSubmit={saveDoctor} method={"post"}>
-
                 <legend>
-                    <p>
-                        {isEditable ?  <input name={"name"} onChange={(e)=>setName(e.target.value)} value={name}/> :doctor.name}
-                    </p>
+                    {isEditable ? <input onChange={(e)=>setName(e.target.value)} value={name}/> :doctor.name}
                 </legend>
-                <div>
-                    <div>
-                        <ul>
-                                <li>
-                                    Telefone: {isEditable ? <input name={"phone"} onChange={(e)=>setPhone(e.target.value)} value={phone}/>  : doctor.phone}
-                                </li>
-                                <li>
-                                    CRM: {isEditable ? <input  name={"crm"} onChange={(e)=>setCrm(e.target.value)} value={crm}/> :doctor.crm}
-                                </li>
-                                <li>
-                                    Estado: {isEditable ? <input name={"state"} onChange={(e)=>setState(e.target.value)} value={state}/> :doctor.state}
-                                </li>
-                                <li>
-                                    Cidade: {isEditable ? <input  name={"city"} onChange={(e)=>setCity(e.target.value)} value={city}/> :doctor.city}
-                                </li>
-                        </ul>
-                    </div>
-                    <div>
 
-                        {/*{specialities && specialities.map((speciality)=>{*/}
-                        {/*        return <p>teste</p>*/}
-                        {/*})}*/}
+                <form id={"update"+doctor.id} onSubmit={saveDoctor} method={"post"}>
+                    {isEditable ?  <input style={{display:"none"}}  name={"name"} onChange={(e)=>setName(e.target.value)} value={name}/> : null}
+                    <div>
+                        <div>
+                            <ul>
+                                    <li>
+                                       <label>Telefone:  </label>{isEditable ? <input name={"phone"} onChange={(e)=>setPhone(e.target.value)} value={phone}/>  : doctor.phone}
+                                    </li>
+                                    <li>
+                                        <label> CRM:</label> {isEditable ? <input  name={"crm"} onChange={(e)=>setCrm(e.target.value)} value={crm}/> :doctor.crm}
+                                    </li>
+                                    <li>
+                                        <label>  Estado: </label>{isEditable ? <input name={"state"} onChange={(e)=>setState(e.target.value)} value={state}/> :doctor.state}
+                                    </li>
+                                    <li>
+                                        <label> Cidade:</label> {isEditable ? <input  name={"city"} onChange={(e)=>setCity(e.target.value)} value={city}/> :doctor.city}
+                                    </li>
+                            </ul>
+                        </div>
+                        <div>
+                           <ul>
+                               <li>
+                                    Especialidades
+                               </li>
+                               {["teste","teste3"].map((speciality)=>{
+                                   return <li>{speciality}</li>
+                               })}
+                           </ul>
+
+                        </div>
                     </div>
-                </div>
-                <button type={"button"} onClick={()=>confirmDeleteDoctor(doctor.id)}>
-                    Deletar
-                </button>
-                <button type={"button"} onClick={()=>{setIsEditable(!isEditable)}}>
-                    Atualizar
-                </button>
-                {isEditable ?
-                    <button form={"update"+doctor.id} type={"submit"}>
-                        Salvar
+                    <button type={"button"} onClick={()=>confirmDeleteDoctor(doctor.id)}>
+                        Deletar
                     </button>
-                    : null}
+                    <button type={"button"} onClick={()=>{setIsEditable(!isEditable)}}>
+                        Atualizar
+                    </button>
+                    {isEditable ?
+                        <button form={"update"+doctor.id} type={"submit"}>
+                            Salvar
+                        </button>
+                        : null}
                 </form>
             </fieldset>
         </section>

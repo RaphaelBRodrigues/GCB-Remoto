@@ -65,7 +65,7 @@ export default () => {
                             <label>
                                 Cidade
                             </label>
-                            <input placeholder={"Ex:Cidade"}  name={"city"} id={"city"}/>
+                            <input placeholder={"Ex:São Paulo"}  name={"city"} id={"city"}/>
                         </div>
                         <button>Cadastrar</button>
                     </div>

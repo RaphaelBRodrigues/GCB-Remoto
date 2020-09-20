@@ -5,23 +5,57 @@
 
 
 #doctor-card fieldset{
-    width: 100%;
+    color:var(--project-color-4);
+    box-shadow: 0 0 10px black;
+    border: 0;
+    border-top-left-radius: 2em;
+    border-bottom-right-radius: 2em;
+    padding: 2em 0em;
 }
 
 #doctor-card fieldset legend{
-    display: flex;
-    justify-content: space-between;
+    margin-left: 2em;
+    font-weight: bold;
+    font-size: 1.3em;
 }
 
 
 #doctor-card fieldset div{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: flex-start;
+}
+
+#doctor-card fieldset form > div{
+    flex: 1;
+}
+#doctor-card fieldset form > div ul li {
+    margin-top: 1em;
+}
+
+#doctor-card fieldset form > div ul li label {
+    width: 7em !important;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 0.3em;
+}
+
+#doctor-card fieldset form > div ul li input{
+    left: 1em;
+    position: relative;
 }
 
 #doctor-card fieldset div + div{
-    background-color: blue;
+    margin-left: 5em;
 }
+#doctor-card fieldset div + div ul li:first-of-type {
+    font-weight: bold;
+    list-style: none;
+}
+#doctor-card fieldset div + div ul{
+    list-style: inherit;
+}
+
+
 #doctor-card fieldset button {
     margin-left: 1em;
 }

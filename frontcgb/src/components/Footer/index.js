@@ -7,7 +7,7 @@ export default () =>{
         <footer>
             <ul>
                 <li>
-                    ~ Raphael Barbosa Rodrigues
+                  <a target={"_blank"} href={"https://github.com/RaphaelBRodrigues/GCB-Remoto"}>  ~ Raphael Barbosa Rodrigues </a>
                 </li>
             </ul>
         </footer>
