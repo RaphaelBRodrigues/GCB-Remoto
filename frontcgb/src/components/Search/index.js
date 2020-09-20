@@ -82,7 +82,10 @@ export default ({setCustomSearchDoctors,setShowRawList}) => {
                   beRed ? {border:"1px solid red",boxShadow:"0 0 10px red"}: {border:"1px solid rgba(0,0,0,0)"} : null
               }
               onSelect={()=>{
-                  searchByCrm().then();
+                  setTimeout(()=>{
+                      searchByCrm().then();
+                  },500)
+
               }}
               value={crm}
               onChange={(e)=>{
