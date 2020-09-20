@@ -10,9 +10,11 @@ async function deleteDoctor(id){
 
 async function updateDoctor(data,doctor_id){
 
+
     const response = await api.put("/doctor/"+doctor_id,{...data});
     const { result } = response.data.result;
 
+    console.log(response);
 
     return result;
 }
