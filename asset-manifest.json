@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/GCB-Remoto/static/css/main.bf80c4e8.chunk.css",
-    "main.js": "/GCB-Remoto/static/js/main.f0b22f1c.chunk.js",
-    "main.js.map": "/GCB-Remoto/static/js/main.f0b22f1c.chunk.js.map",
+    "main.css": "/GCB-Remoto/static/css/main.816a021d.chunk.css",
+    "main.js": "/GCB-Remoto/static/js/main.83e4c288.chunk.js",
+    "main.js.map": "/GCB-Remoto/static/js/main.83e4c288.chunk.js.map",
     "runtime-main.js": "/GCB-Remoto/static/js/runtime-main.26cf1f04.js",
     "runtime-main.js.map": "/GCB-Remoto/static/js/runtime-main.26cf1f04.js.map",
-    "static/js/2.772d30b8.chunk.js": "/GCB-Remoto/static/js/2.772d30b8.chunk.js",
-    "static/js/2.772d30b8.chunk.js.map": "/GCB-Remoto/static/js/2.772d30b8.chunk.js.map",
+    "static/js/2.02e0586a.chunk.js": "/GCB-Remoto/static/js/2.02e0586a.chunk.js",
+    "static/js/2.02e0586a.chunk.js.map": "/GCB-Remoto/static/js/2.02e0586a.chunk.js.map",
     "index.html": "/GCB-Remoto/index.html",
-    "precache-manifest.c3aa80b72b4c263021ebfc518cab3820.js": "/GCB-Remoto/precache-manifest.c3aa80b72b4c263021ebfc518cab3820.js",
+    "precache-manifest.a31e4d91d38764cab62442f368b1c778.js": "/GCB-Remoto/precache-manifest.a31e4d91d38764cab62442f368b1c778.js",
     "service-worker.js": "/GCB-Remoto/service-worker.js",
-    "static/css/main.bf80c4e8.chunk.css.map": "/GCB-Remoto/static/css/main.bf80c4e8.chunk.css.map",
-    "static/js/2.772d30b8.chunk.js.LICENSE.txt": "/GCB-Remoto/static/js/2.772d30b8.chunk.js.LICENSE.txt"
+    "static/css/main.816a021d.chunk.css.map": "/GCB-Remoto/static/css/main.816a021d.chunk.css.map",
+    "static/js/2.02e0586a.chunk.js.LICENSE.txt": "/GCB-Remoto/static/js/2.02e0586a.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.26cf1f04.js",
-    "static/js/2.772d30b8.chunk.js",
-    "static/css/main.bf80c4e8.chunk.css",
-    "static/js/main.f0b22f1c.chunk.js"
+    "static/js/2.02e0586a.chunk.js",
+    "static/css/main.816a021d.chunk.css",
+    "static/js/main.83e4c288.chunk.js"
   ]
 }
