@@ -6,10 +6,12 @@
 * https://github.com/RaphaelBRodrigues/GCB-Remoto.git
 
 ### Projeto (React)
-* https://raphaelbrodrigues.github.io/GCB-Remoto/
+* Principal - https://raphaelbrodrigues.github.io/GCB-Remoto/
+* Backup - http://raphaelgcbbkp-dev.umbler.net/build
 
 ### API (Node.Js)
-* `Endpoint` -  http://raphaelgcb-dev.umbler.net/
+* `Endpoint Principal` -  http://raphaelgcb-dev.umbler.net/
+* `Endpoint Backup` -  http://raphaelgcbbkp-dev.umbler.net/
 
 * `GET - /` - Exibe todos os endpoints disponíveis
 
