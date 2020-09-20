@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/GCB-Remoto/precache-manifest.dbced3e06fc4858cf9b8e3b6032a3189.js"
+  "/GCB-Remoto/precache-manifest.525eda6ff7b94083ca3ac13fee9ded3d.js"
 );
 
 self.addEventListener('message', (event) => {
