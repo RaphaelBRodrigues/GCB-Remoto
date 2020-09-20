@@ -48,6 +48,8 @@ export default ({setCustomSearchDoctors,setShowRawList}) => {
         }
     }
 
+
+
     useEffect(()=>{
         if(customDoctorsIntern.length > 0 && crm){
             setShowRawList(false);
@@ -64,8 +66,9 @@ export default ({setCustomSearchDoctors,setShowRawList}) => {
     return (
         <div id="search-block">
           <FontAwesomeIcon
-              onClick={()=>searchByCrm()}
+              onClick={()=>{searchByCrm()}}
               icon={faSearch}
+              id={"search"}
           />
           <input
               placeholder={"Insira o CRM do médico"}
