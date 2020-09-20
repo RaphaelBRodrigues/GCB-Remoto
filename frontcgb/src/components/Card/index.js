@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react';
-import { deleteDoctor , updateDoctor } from "./handles";
+import { deleteDoctor , updateDoctor , getSpecialities } from "./handles";
 import "./index.css";
 
 export default ({ doctor , updateList }) => {
@@ -11,6 +11,7 @@ export default ({ doctor , updateList }) => {
     const [state,setState] = useState(doctor.state);
     const [city,setCity] = useState(doctor.city);
 
+    const [specialities,setSpecialities] = useState([]);
 
     const [isEditable,setIsEditable] = useState(false);
 
@@ -23,6 +24,22 @@ export default ({ doctor , updateList }) => {
             updateList(id);
         }
     }
+
+    async function listSpecialities(){
+        const resp = await getSpecialities(doctor.id);
+
+        console.log(resp);
+        setSpecialities(resp);
+
+        return resp;
+    };
+
+    useEffect(()=>{
+        listSpecialities().then(()=>{
+
+        });
+    },[]);
+
 
     async function saveDoctor(e){
 
@@ -81,8 +98,8 @@ export default ({ doctor , updateList }) => {
                                <li>
                                     Especialidades
                                </li>
-                               {["teste","teste3"].map((speciality)=>{
-                                   return <li>{speciality}</li>
+                               {specialities.map((speciality,index)=>{
+                                   return <li key={index}>{speciality.name}</li>
                                })}
                            </ul>
 

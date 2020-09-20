@@ -4,7 +4,6 @@ import "./index.css";
 import Card from "../Card";
 
 import {getDoctors, getDoctorSpeciality} from "./handles";
-import {api} from "../../services/api";
 
 
 
@@ -48,13 +47,6 @@ export default () => {
             setDoctors(doctor);
         });
     },[updateList]);
-
-    // useEffect(()=>{
-    //         listDoctorSpeciality().then((specialities)=>{
-    //                 console.log(specialities);
-    //         });
-    // },[doctors]);
-
 
     return (
         <section id="doctor-block">
