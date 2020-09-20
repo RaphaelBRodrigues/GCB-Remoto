@@ -26,6 +26,7 @@ export default ({setCustomSearchDoctors,setShowRawList}) => {
             }
         }catch (err){
             console.error(err);
+            setShowRawList(true);
             alert("Médico não encontrado!");
         }
 
