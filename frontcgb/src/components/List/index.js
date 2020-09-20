@@ -60,7 +60,7 @@ export default () => {
         <section id="doctor-block">
             <div>
                 {doctors.map((doctor,index)=>{
-                    return <Card doctor={doctor}  updateList={setUpdateList} key={index} />
+                    return <Card doctor={doctor} updateList={setUpdateList} key={index} />
                 })}
             </div>
         </section>

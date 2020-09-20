@@ -22,4 +22,6 @@
 #doctor-card fieldset div + div{
     background-color: blue;
 }
-
+#doctor-card fieldset button {
+    margin-left: 1em;
+}

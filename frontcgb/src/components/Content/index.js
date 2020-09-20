@@ -14,7 +14,7 @@ export default ({showList ,showCreateUser}) =>{
     return(
         <main>
             <Search />
-            {showList && <List/>}
+            {showList && <List />}
             {showCreateUser && <CreateForm/>}
         </main>
     );
