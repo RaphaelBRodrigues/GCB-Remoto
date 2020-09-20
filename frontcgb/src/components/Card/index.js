@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react';
-import { deleteDoctor , updateDoctor , getSpecialities , deleteSpecialityAPI } from "./handles";
+import { deleteDoctor , updateDoctor , getDoctorSpecialities , deleteSpecialityAPI } from "./handles";
 import "./index.css";
 
 export default ({ doctor , updateList }) => {
@@ -26,7 +26,7 @@ export default ({ doctor , updateList }) => {
     }
 
     async function listSpecialities(){
-        const resp = await getSpecialities(doctor.id);
+        const resp = await getDoctorSpecialities(doctor.id);
 
         setSpecialities(resp);
 
@@ -56,7 +56,7 @@ export default ({ doctor , updateList }) => {
 
         if(res){
             alert("Usuário atualizado!!");
-            updateList(doctor.id);
+            updateList(doctor.id + Date.now());
             setIsEditable(false);
         }else{
             alert("Falha ao atualizar usuário!!");
@@ -69,6 +69,8 @@ export default ({ doctor , updateList }) => {
             speciality_id,
             doctor_id:doctor.id
         }
+
+        console.log(data);
 
         const res = await deleteSpecialityAPI(data);
 
@@ -117,7 +119,7 @@ export default ({ doctor , updateList }) => {
                                    return (
                                        <li key={index}>
                                            {speciality.name}
-                                           {isEditable && <sup onClick={()=>{deleteSpeciality(speciality.id)}}>X</sup>}
+                                           {isEditable && <sup onClick={()=>{deleteSpeciality(speciality.id)}}> X </sup>}
                                        </li>
                                    );
                                })}

@@ -62,4 +62,5 @@
 
 #doctor-card fieldset ul li sup {
     cursor: pointer;
+    color:red;
 }

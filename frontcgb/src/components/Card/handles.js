@@ -17,7 +17,7 @@ async function updateDoctor(data,doctor_id){
     return result;
 }
 
-async function getSpecialities(doctor_id){
+async function getDoctorSpecialities(doctor_id){
 
     const response = await api.get("/doctorSpeciality/"+doctor_id);
     const { result } = response.data.result;
@@ -31,10 +31,12 @@ async function getSpecialities(doctor_id){
 
 async function deleteSpecialityAPI(data){
     console.clear();
-    console.log(data);
+    const {doctor_id , speciality_id } = data;
+
     try{
-        const response = await api.get("/doctorSpeciality",data);
+        const response = await api.delete(`/doctorSpeciality/${doctor_id}/${speciality_id}`);
         const { result } = response.data.result;
+
         console.log(result);
 
         return result;
@@ -46,4 +48,4 @@ async function deleteSpecialityAPI(data){
 
 
 
-export { deleteDoctor , updateDoctor ,getSpecialities , deleteSpecialityAPI };
+export { deleteDoctor , updateDoctor ,getDoctorSpecialities , deleteSpecialityAPI };
