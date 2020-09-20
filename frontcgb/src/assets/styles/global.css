@@ -15,6 +15,7 @@ body {
     padding: 0;
     background-color: var(--project-color-1);
     font-family: var(--project-font-default);
+
 }
 
 .App{
@@ -26,12 +27,21 @@ ul {
     list-style: none;
 }
 
+li:hover{
+    list-style: square;
+}
+
 input{
     border:0;
     background-color: rgba(255,255,255,0.1);
     margin: 0 0em 0 1em;
     padding: 0.4em 0.2em 0.2em 0.4em;
     color:white;
+    transition-duration: 1s;
+}
+
+input:hover {
+    color:var(--project-color-4);
 }
 
 input::placeholder{
@@ -45,6 +55,12 @@ button {
     font-size: 1em;
     padding: 0.2em 0.5em;
     color:var(--project-color-5);
+    border-radius: 0.3em;
+    transition-duration: 1s;
+    cursor: pointer;
+}
+button:hover {
+    letter-spacing: 0.1em;
 }
 a{
     color:inherit;
@@ -74,4 +90,9 @@ a{
 .disabled{
     background-color: rgba(0,0,0,0.2);
     color:gray;
+}
+
+sup:hover{
+    transition-duration: 1s;
+    font-size: 1em;
 }

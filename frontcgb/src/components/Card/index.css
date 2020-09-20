@@ -11,11 +11,23 @@
     border-top-left-radius: 2em;
     border-bottom-right-radius: 2em;
     padding: 2em 0em;
+    transition-duration: 1s;
+}
+
+#doctor-card fieldset:hover {
+    background-color: rgba(0,0,0,0.5);
+    color:white;
+}
+
+#doctor-card fieldset:hover legend{
+    font-size: 1.6em;
+
 }
 
 #doctor-card fieldset legend{
     margin-left: 2em;
     font-weight: bold;
+    transition-duration: 1s;
     font-size: 1.3em;
 }
 
@@ -30,6 +42,11 @@
 }
 #doctor-card fieldset form > div ul li {
     margin-top: 1em;
+    transition-duration: 0.5s;
+}
+
+#doctor-card fieldset form > div ul li:hover{
+    color: var(--project-color-4);
 }
 
 #doctor-card fieldset form > div ul li label {

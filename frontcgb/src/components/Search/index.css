@@ -6,6 +6,11 @@
     width: 30%;
     justify-content: center;
     box-shadow: 0 0 10px black;
+    transition-duration: 0.3s;
+}
+
+#search-block:hover{
+    background-color: rgba(0,0,0,0.3);
 }
 
 #search-block input{

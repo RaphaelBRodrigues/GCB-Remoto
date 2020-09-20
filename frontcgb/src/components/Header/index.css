@@ -3,13 +3,17 @@ header{
     margin-top: 0 !important;
     display: flex;
     width: 100%;
-    background-color: var(--project-color-dark);
+    background-image: linear-gradient(to bottom,var(--project-color-dark),var(--project-color-dark),var(--project-color-dark),var(--project-color-dark),var(--project-color-dark));
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 0.5em;
     box-sizing: border-box;
+    animation: corInicial 0.1s linear;
+    transition-duration: 0.1s;
+    box-shadow: 0 0 10px black;
 }
+
 
 header + nav {
     margin-top: 3em;
@@ -35,6 +39,25 @@ header + nav ul li{
     cursor: pointer;
 
 }
+
+header nav img {
+
+    animation: corLogo 1s linear;
+    transition-duration: 4s;
+}
+
+@keyframes corLogo {
+    0%{
+        filter: grayscale(100%);
+    }
+    500%{
+        filter: grayscale(0%);
+    }
+    100%{
+        filter: grayscale(0%);
+    }
+}
+
 
 header + nav ul li:hover {
     width: 4em;
