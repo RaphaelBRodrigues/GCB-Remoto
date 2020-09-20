@@ -2,13 +2,14 @@ import React, {useEffect, useState} from 'react';
 import { deleteDoctor } from "./handles";
 import "./index.css";
 
-export default ({ doctor }) => {
+export default ({ doctor , updateList }) => {
 
     async function confirmDeleteDoctor(id){
         const sure = window.confirm("Deseja deletar o doutor(a) "+doctor.name+"?");
 
         if(sure){
             await deleteDoctor(id);
+            updateList(id);
         }
     }
 

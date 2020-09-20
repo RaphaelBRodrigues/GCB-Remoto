@@ -13,6 +13,7 @@ export default () => {
 
     const [doctors,setDoctors] = useState([]);
     const [specialities,setSpecialities] = useState([]);
+    const [updateList , setUpdateList] = useState(0)
 
     async function listDoctors(){
         const doctors = await getDoctors();
@@ -46,7 +47,7 @@ export default () => {
         listDoctors().then(doctor =>{
             setDoctors(doctor);
         });
-    },[]);
+    },[updateList]);
 
     // useEffect(()=>{
     //         listDoctorSpeciality().then((specialities)=>{
@@ -59,7 +60,7 @@ export default () => {
         <section id="doctor-block">
             <div>
                 {doctors.map((doctor,index)=>{
-                    return <Card doctor={doctor}  key={index} />
+                    return <Card doctor={doctor}  updateList={setUpdateList} key={index} />
                 })}
             </div>
         </section>

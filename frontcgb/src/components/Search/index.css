@@ -1,11 +1,11 @@
 #search-block{
-    border: 1px solid var(--project-color-4);
     background-color: var(--project-color-1);
     padding: 1.5em;
     border-radius: 1em;
     display: flex;
     width: 30%;
     justify-content: center;
+    box-shadow: 0 0 10px black;
 }
 
 #search-block input{

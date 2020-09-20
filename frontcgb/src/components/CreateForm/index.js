@@ -31,7 +31,7 @@ export default () => {
 
     return (
         <section id="doctor-create-form">
-            <form onSubmit={createDoctor}>
+            <form method={"post"} onSubmit={createDoctor}>
                 <fieldset>
                     <legend>
                         Cadastro
@@ -41,31 +41,31 @@ export default () => {
                             <label>
                                 Nome do médico
                             </label>
-                            <input name={"name"} id={"name"}/>
+                            <input placeholder={"Ex:Raphael Barbosa Rodrigues"} name={"name"} id={"name"}/>
                         </div>
                         <div>
                             <label>
                                 CRM
                             </label>
-                            <input name={"crm"} id={"crm"}/>
+                            <input placeholder={"Ex:3424234"}  name={"crm"} id={"crm"}/>
                         </div>
                         <div>
                             <label>
-                               Phone
+                               Telefone
                             </label>
-                            <input name={"phone"} id={"phone"}/>
+                            <input placeholder={"Ex:(11) 454841-4444"}  name={"phone"} id={"phone"}/>
                         </div>
                         <div>
                             <label>
                                 Estado
                             </label>
-                            <input name={"state"} id={"state"} maxLength={2}/>
+                            <input placeholder={"Ex:SP"}  name={"state"} id={"state"} maxLength={2}/>
                         </div>
                         <div>
                             <label>
                                 Cidade
                             </label>
-                            <input name={"city"} id={"city"}/>
+                            <input placeholder={"Ex:Cidade"}  name={"city"} id={"city"}/>
                         </div>
                         <button>Cadastrar</button>
                     </div>
