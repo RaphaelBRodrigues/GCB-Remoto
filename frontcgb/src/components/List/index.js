@@ -7,12 +7,15 @@ import {getDoctors, getDoctorSpeciality} from "./handles";
 
 
 
-export default () => {
+export default ({ customSearchDoctors , showRawList }) => {
 
 
     const [doctors,setDoctors] = useState([]);
     const [specialities,setSpecialities] = useState([]);
-    const [updateList , setUpdateList] = useState(0)
+    const [updateList , setUpdateList] = useState(0);
+
+
+
 
     async function listDoctors(){
         const doctors = await getDoctors();
@@ -51,7 +54,11 @@ export default () => {
     return (
         <section id="doctor-block">
             <div>
-                {doctors.map((doctor,index)=>{
+                {showRawList && doctors.map((doctor,index)=>{
+                    return <Card doctor={doctor} updateList={setUpdateList} key={index} />
+                })}
+
+                {!showRawList && customSearchDoctors.map((doctor,index)=>{
                     return <Card doctor={doctor} updateList={setUpdateList} key={index} />
                 })}
             </div>
