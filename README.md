@@ -30,10 +30,13 @@
 ![main](images/home.png)
 <hr/>
 
-![main2](images/home.png)
+![main2](images/home2.png)
 <hr/>
 
 ![edit](images/edit.png)
+<hr/>
+
+![edit](images/speciality.png)
 <hr/>
 
 ![create](images/create.png)
